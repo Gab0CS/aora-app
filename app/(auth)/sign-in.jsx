@@ -4,7 +4,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
 import { images } from "../../constants";
-import { CustomButton, FormField } from "../../components";
+// import { CustomButton, FormField } from "../../components";
+import CustomButton from "../../components/CustomButton";
+import FormField from "../../components/FormField";
 import { getCurrentUser, signIn } from "../../lib/appwrite";
 import { useGlobalContext } from "../../context/GlobalProvider";
 

@@ -5,7 +5,8 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
 import { images } from "../../constants";
 import { createUser } from "../../lib/appwrite";
-import { CustomButton, FormField } from "../../components";
+import CustomButton from "../../components/CustomButton";
+import FormField from "../../components/FormField"
 import { useGlobalContext } from "../../context/GlobalProvider";
 
 const SignUp = () => {
@@ -85,6 +86,8 @@ const SignUp = () => {
             isLoading={isSubmitting}
           />
 
+          
+
           <View className="flex justify-center pt-5 flex-row gap-2">
             <Text className="text-lg text-gray-100 font-pregular">
               Have an account already?
@@ -94,6 +97,12 @@ const SignUp = () => {
               className="text-lg font-psemibold text-secondary"
             >
               Login
+            </Link>
+            <Link
+              href="/home"
+              className="text-lg font-psemibold text-secondary"
+            >
+              home
             </Link>
           </View>
         </View>
