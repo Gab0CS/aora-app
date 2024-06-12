@@ -57,7 +57,7 @@ const Home = () => {
               <Text className="text-gray-100 text-lg font-pregular mb-3">
                 Latest videos
               </Text>
-              <Trending post={[ latestPosts ?? [] ]}/>
+              {/* <Trending post={[ latestPosts ?? [] ]}/> */}
             </View>
           </View>
         )}
